@@ -32,4 +32,4 @@ Each exercise will sums the next points:
 
 Max Total: `120`.
 
-Note: The bonus are optional but highly recommended to implement since the bootcamp is reserved to a maximum size of people.
+Note: The bonus are optional but highly recommended to implement.
