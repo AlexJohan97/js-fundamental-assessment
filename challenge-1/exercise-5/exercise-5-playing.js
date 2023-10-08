@@ -26,3 +26,21 @@ const users = [
 ];
 
 // code here...
+
+
+const getFullName=(users)=>{
+  return users.map((user)=>{
+    const {name,lastname,...rest}=user
+    return {fullName:`${user.name} ${user.lastname}`,...rest}
+  })
+}
+
+const ageSorting=(users)=>{
+  return users.slice().sort((a,b)=>b.age-a.age)
+}
+
+const findByName=(users,name)=>{
+  return users.filter(user=>user.name===name)
+}
+
+console.log(findByName(users,"Teri"))

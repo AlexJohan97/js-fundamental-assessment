@@ -1,10 +1,10 @@
 // refactor here...
 
-const logAsync = (msg) =>
+const logAsync = (msg,delay) =>
   setTimeout(function () {
     console.log(msg);
-  }, Math.random() * 1000);
+  }, Math.random()+delay*10);
 
-const logOne = logAsync("I");
-const logTwo = logAsync("promise");
-const logThree = logAsync("you");
+const logOne = logAsync("I", 1);
+const logTwo = logAsync("promise",2);
+const logThree = logAsync("you",3);
