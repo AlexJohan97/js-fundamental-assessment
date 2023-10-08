@@ -12,3 +12,12 @@ const find3 = 1;
 
 
 // code your solution here...
+
+const findIndex=(array,desiredNumber)=>{
+    for (let i = 0; i < array.length; i++) {
+        if(desiredNumber===array[i])return i
+    }
+    return null
+}
+
+console.log(findIndex(array3,find3))
